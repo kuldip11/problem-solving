@@ -1,0 +1,19 @@
+def timeConversion(s):
+    a=int(s[0:2])
+    b=s[2:8]
+    d=s[0:8]
+    if s[8:10]=='AM':
+        if a!=12:
+            return str(s[0:8])
+        else:
+            return str('00')+str(b)
+    else:
+        if a!=12:
+            a=int(a)
+            a=a+12
+            if a<24:
+                a=str(a)
+                b=str(b)
+                return a+b
+        else:
+            return s[0:8]
