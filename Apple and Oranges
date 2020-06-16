@@ -1,0 +1,11 @@
+def AppleandOranges(s, t, a, b, apples, oranges):
+    k=0
+    m=0
+    for i in apples:
+        if i+a in range(s,t+1):
+            k+=1
+    for i in oranges:
+        if i+b in range(s,t+1):
+            m+=1
+    print(k)
+    print(m)
